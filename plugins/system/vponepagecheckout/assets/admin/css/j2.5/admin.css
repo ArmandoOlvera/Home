@@ -1,0 +1,232 @@
+/*--------------------------------------------------------------------------------------------------------
+# VP One Page Checkout - Joomla! System Plugin for VirtueMart 3
+----------------------------------------------------------------------------------------------------------
+# Copyright:	 Copyright (C) 2012 - 2015 VirtuePlanet Services LLP. All Rights Reserved.
+# License:	   GNU General Public License version 2 or later; http://www.gnu.org/licenses/gpl-2.0.html
+# Author:		Abhishek Das
+# Email:		 info@virtueplanet.com
+# Websites:	  http://www.virtueplanet.com
+----------------------------------------------------------------------------------------------------------
+$Revision: 19 $
+$LastChangedDate: 2015-01-24 19:28:10 +0530 (Sat, 24 Jan 2015) $
+$Id: admin.css 19 2015-01-24 13:58:10Z abhishekdas $
+----------------------------------------------------------------------------------------------------------*/
+body, div, h1, h2, h3, p, span, a, input, input.readonly, legend, button {
+	font-family: Verdana;
+	font-weight: normal;
+}
+legend, h3 {
+	font-size: 14px;
+	font-weight: 400;
+}
+input.required {
+	padding: 2px 4px;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+.pane-sliders .panel {
+	margin-bottom: 6px;
+}
+div.panel fieldset {
+	padding: 15px;
+	margin: 0;
+}
+.pane-sliders h3.title {
+	padding: 4px 6px;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+
+}
+.pane-sliders h3.title > a {
+	color: #000;
+	display: block;
+	padding: 2px 0;
+}
+.pane-sliders .pane-toggler-down span {
+	background: transparent url(../../images/admin-minus.png) 0 50% no-repeat;
+	padding: 2px 2px 2px 35px;
+}
+.pane-sliders .pane-toggler span {
+	background: transparent url(../../images/admin-plus.png) 0 50% no-repeat;
+	padding: 2px 2px 2px 35px;
+}
+fieldset.panelform ul li > label {
+	width: 180px;
+	max-width: 180px;
+	padding-right: 20px;
+	display: inline-block;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+fieldset.panelform fieldset.radio label {
+	min-width: 40px;
+	width: 60px;
+	margin-top: 12px;
+}
+fieldset.panelform input[type="radio"]{
+	margin-top: 12px;
+}
+fieldset.panelform .spacer label {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 10px 0 0 0;
+	width: 100%;
+	max-width: 100%;
+	font-size: 120%;
+}
+fieldset.panelform ul li > fieldset, fieldset.panelform ul li > input, fieldset.panelform textarea {
+	margin-bottom: 20px;
+}
+fieldset.panelform .button2-left, fieldset.panelform .media-preview {
+	margin-top: 8px;
+}
+.spacer hr {
+	border: 0 none;
+	background: #00a8df;
+	height: 2px;
+}
+fieldset.panelform input[type="text"], fieldset.panelform textarea {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s,box-shadow linear 0.2s;
+	transition: border linear 0.2s,box-shadow linear 0.2s;
+}
+fieldset.panelform select, fieldset.panelform input[type="text"], fieldset.panelform textarea {
+	display: inline-block;
+	padding: 4px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #333333;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: auto;
+}
+fieldset.panelform input[type="text"]:focus, fieldset.panelform textarea:focus {
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.desc-text {
+	font-weight: normal;
+	color: #656667;
+	font-family: Verdana;
+	text-align: justify;
+}
+.label {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 10.998px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #FFF;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #999;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;	
+}
+.label-info, .badge-info {
+	background-color: #3A87AD;
+}
+.extension-title {
+	color: #333;
+	font-family: Verdana, serif;
+	margin-top: 0;
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: normal;
+}
+.extension-title.module {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+.extension-version {
+	margin-left: 10px;
+	vertical-align: top;
+}
+.copy-text {
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Verdana;
+	text-align: right;
+}
+.vp-extension-description {
+	padding-left: 200px;
+}
+.extension-image-container {	
+	float: left;
+	margin-top: 5px;
+	margin-left: -200px;
+	padding: 0;
+	background: #FFF;
+	border: 15px solid #FFF;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.extension-image-container > img {
+	float: none;
+	margin: 0 auto;
+}
+fieldset.panelform select {
+	min-width: 170px;
+	max-width: 170px;
+}
+ul.adminformlist li, .clearfix {
+	*zoom: 1;
+	display: block;
+}
+ul.adminformlist li:after, ul.adminformlist li:before, .clearfix:after, .clearfix:before {
+	display: table;
+	content: " ";
+}
+ul.adminformlist li:after, .clearfix:after {
+	clear: both;
+}
+ul.adminformlist li .muted.small {
+	margin-left: 200px;
+	margin-bottom: 10px;
+	color: #999;
+}
+input#jform_params_hide_custom_msg[type="text"] {
+	margin-bottom: 5px;
+}
+fieldset.panelform input[type="text"].readonly {
+	cursor: not-allowed;
+	background-color: #EEE;
+	opacity: 1;
+	font-weight: normal;
+}
+textarea#jform_params_registration_message {
+	height: 120px;
+}
+input[type="text"].warning {
+	color: #C09853;
+}
+input[type="text"].success {
+	color: #468847;
+}

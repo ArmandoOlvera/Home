@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension>
+	<name>Vina Galio</name>
+	<folder>vina_galio</folder>
+	<creationDate>June 24, 2015</creationDate>
+	<version>1.0.0</version>
+	<image>http://joomla.vinagecko.net/t/vina_galio/vina_galio.jpg</image>
+	<demo>http://joomla.vinagecko.net/i/vina_galio/</demo>
+	<download>http://themeforest.net/item/galio-mega-shop-responsive-virtuemart-template/11822600?ref=VinaWebSolutions</download>
+	<license>Commercial</license>
+	<description>Galio :: Mega Shop Responsive VirtueMart Template</description>
+</extension>

@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+	
+/*light box window formating */
+
+	#sbox-window{
+		/* border */
+		padding:20px !important;
+		border:5px solid #222;
+		background-color:#fff;
+	}
+	
+	#sbox-window, #sbox-content{
+		/* rounded corner */
+		-moz-border-radius: 15px !important;
+		-webkit-border-radius: 15px !important;
+		border-radius: 15px !important;	
+	}
+	
+	

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>plg_system_popup_anywhere</name>
+	<author>codextension</author>
+	<creationDate>28th June 2011</creationDate>
+	<copyright>Copyright (C) 2010-2011 codextension.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@codextension.com</authorEmail>
+	<authorUrl>http://codextension.com</authorUrl>
+	<version>1.6.0</version>
+	<description>Shows a mootools popup window of an URL, image or even flash anywhere on your site.</description>
+	<files>
+		<filename plugin="popup_anywhere">popup_anywhere.php</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>js</folder>
+		<folder>toggle</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_popup_anywhere.ini</language>
+		<language tag="en-GB">en-GB.plg_system_popup_anywhere.sys.ini</language>
+	</languages>
+	<config>
+	<fields name="params">
+	<fieldset name="basic" addfieldpath="/plugins/system/popup_anywhere/elements">
+  		<field name="link" type="text" default="" size="45" label="URL or Flash file (SWF)" description="URL, link or Flash file to be displayed in the mootools pop-up window."/>
+  		<field name="insertid" type="addarticle" default="0" label="Select article link" description="Select an article to be displayed in the pop-up window. Leave blank (or clear) to use URL." />
+		<field name="image" type="media" label="Image" description="Image to be displayed in the mootools pop-up window." directory="" />
+		
+		<field type="toggleradio"/>
+		<field name="addarticle" type="radio" default="1" label="Add base URL" description="Adds base URL of your website url (URL to Joomla installation) to relative paths, if no http:// is set (recommended)."/>
+		<field name="enableNoConflict" type="radio" default="0" label="No conflict" description="No conflict (Mootools >= 1.2).If set to yes, $ will be replaced with document.id() preventing conflicts with other Javascript libraries. 'System - Mootools Upgrade'-Plugin must be activated."/>
+
+		<field name="popupwidth" type="text" default="" label="Popup width" description="Width of popup in pixel (without px). Leave empty for default value or size detection."/>
+  		<field name="popupheight" type="text" default="" label="Popup height" description="Height of popup in pixel (without px). Leave empty for default value or size detection."/>
+		<field name="cookietime" type="text" default="0" label="Livetime of Cookie" description="After how many hours will the Cookie exprire? Set to 0 if you want the Cookie to expire after the browser is closed. Will only be used if 'show when?' is set to 'cookie stored'."/>
+		<field name="type" type="list" default="1" label="Show when?" description="When shall the popup appear? Session: every new visit and login/logout, cookie: after a time period /  browser closed (if cookietime = 0)">
+		      <option value="0">session</option>
+		      <option value="1">cookie</option>
+			  <option value="2">always</option>
+		</field>
+  		<field directory="plugins/system/popup_anywhere/css" name="template" type="filelist" hide_default="true" filter="\.css" label="Use css style sheet" description="Uses a css style sheet to format the modal window. Located in /plugins/system/popup_anywhere/templates/"/>		
+		<field name="modaltype" type="list" default="0" label="Modal type" description="Type of Modal pop up.">
+		      <option value="0">iframe</option>
+		      <option value="2">image</option>
+		</field>
+		<field name="closeafterseconds" type="text" default="0" label="Close modal after ? seconds" description="After how many seconds should the modal closed again. Set to 0 if modal should stay open." size="4"/>
+		<field name="linkofimage" type="text" default="" label="Add link" size="45" description="Adds a link when pressing on the pop-up, leave blank for no link. Works with all modal types."/>
+		<field name="linktarget" type="list" default="0" label="Link Target" description="What is the target of the added link (new window is not recommended for IFrames, because of pop-up blockers)? 'In pop-up'-option only works with IFrames.">
+		      <option value="0">parent (in same Window)</option>
+		      <option value="1">new window</option>
+		      <option value="2">in pop-up</option>			  
+		</field>
+		<field name="cursor" type="text" default="" label="Cursor of popup" description="Adds CSS mouse cursor, does not work with modal type iframe. Use pointer to display a hand. Other possible values are crosshair, hand, e-resize, help, move, n-resize, ne-resize, nw-resize, text, w-resize andwait."/>
+		<field name="closebutton" type="radio" default="1" label="Show Close Button" description="Should the close button (top right) be displayed?"/>
+		<field name="scrollbar" type="radio" default="1" label="Scrollbar?" description="Should scroll-bars be enabled?"/>
+		
+		<field type="preview"/>
+	</fieldset>
+	</fields>
+	</config>
+</extension>

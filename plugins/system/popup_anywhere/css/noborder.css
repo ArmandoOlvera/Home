@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+/*light box window formating */
+
+	#sbox-window{
+		/* border */
+		padding:0 !important;
+	}
+	
+/*	#sbox-content{
+	}
+	*/
+	
